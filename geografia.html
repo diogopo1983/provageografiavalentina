@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geografia dos Riscos e Espaços Rurais</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #fdbb2d;
+            margin-bottom: 15px;
+        }
+        
+        .header-icons {
+            font-size: 2rem;
+            margin: 15px 0;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .module {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 15px 0;
+            font-size: 1.4rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #2196f3;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .quiz-section {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+        }
+        
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #2ecc71;
+        }
+        
+        .question-number {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .answers {
+            margin-left: 20px;
+        }
+        
+        .answer {
+            margin: 8px 0;
+            padding: 5px;
+        }
+        
+        .gabarito {
+            background: #2c3e50;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .gabarito h3 {
+            color: #fff;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .toggle-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        
+        .toggle-btn:hover {
+            background: #2980b9;
+        }
+        
+        .btn-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+        }
+        
+        .icon {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Geografia dos Riscos e Espaços Rurais</h1>
+            <div class="subtitle">Conteúdo interativo para estudantes de 11 a 13 anos</div>
+            <div class="header-icons">
+                <span>🌍</span>
+                <span>🌾</span>
+                <span>📚</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="module">
+                <h2>📘 RESUMO ESQUEMÁTICO</h2>
+                
+                <h3>MÓDULO 1: GEOGRAFIA DOS RISCOS</h3>
+                <div class="highlight">
+                    <p><strong>1. O que é risco?</strong><br>
+                    - Risco = possibilidade de um evento causar danos.<br>
+                    - Desastre = quando o risco se concretiza e causa prejuízos.<br>
+                    - Catástrofe = desastre de grande magnitude.</p>
+                </div>
+                
+                <p><strong>2. Tipos de Riscos:</strong></p>
+                <ul>
+                    <li><strong>Naturais</strong>: terremotos, enchentes, secas, pandemias.</li>
+                    <li><strong>Antrópicos (humanos)</strong>: poluição, desmatamento, acidentes industriais.</li>
+                    <li><strong>Biológicos</strong>: doenças transmitidas por água, mosquitos, contato humano.</li>
+                </ul>
+                
+                <p><strong>3. Fatores que aumentam a vulnerabilidade:</strong></p>
+                <ul>
+                    <li>Falta de infraestrutura</li>
+                    <li>Uso inadequado do solo</li>
+                    <li>Desinformação</li>
+                    <li>Sistemas de prevenção fracos</li>
+                </ul>
+                
+                <p><strong>4. Como se prevenir?</strong></p>
+                <ul>
+                    <li>Sistemas de alerta (SMS, apps)</li>
+                    <li>Educação ambiental</li>
+                    <li>Planejamento urbano</li>
+                    <li>Defesa Civil</li>
+                </ul>
+            </div>
+
+            <div class="module">
+                <h3>MÓDULO 2: ESPAÇOS RURAIS E ATIVIDADES ECONÔMICAS</h3>
+                <div class="highlight">
+                    <p><strong>1. O que define o espaço rural?</strong><br>
+                    - Paisagem com agricultura, pecuária, extrativismo.<br>
+                    - Menor densidade populacional.<br>
+                    - Atividades primárias predominantes.</p>
+                </div>
+                
+                <p><strong>2. Atividades Econômicas Rurais:</strong></p>
+                <ul>
+                    <li><strong>Agricultura</strong>: monocultura (um produto) x policultura (vários).</li>
+                    <li><strong>Pecuária</strong>: criação de animais (bovinos, suínos, aves, etc.).</li>
+                    <li><strong>Turismo Rural</strong>: hospedagem, gastronomia, vivência no campo.</li>
+                </ul>
+                
+                <p><strong>3. Fatores Locacionais (o que influencia onde produzir?):</strong></p>
+                <ul>
+                    <li>Recursos naturais (água, solo, clima)</li>
+                    <li>Mão de obra</li>
+                    <li>Tecnologia</li>
+                    <li>Infraestrutura (transporte, energia)</li>
+                    <li>Incentivos governamentais</li>
+                </ul>
+                
+                <p><strong>4. Desafios:</strong></p>
+                <ul>
+                    <li>Urbanização avançando sobre áreas rurais</li>
+                    <li>Perda de patrimônio histórico e cultural</li>
+                    <li>Necessidade de diversificação econômica</li>
+                </ul>
+            </div>
+
+            <div class="quiz-section">
+                <h2>✅ QUIZ: GEOGRAFIA DOS RISCOS E ESPAÇOS RURAIS</h2>
+                
+                <h3>🔁 VERDADEIRO OU FALSO (20 questões)</h3>
+                
+                <div class="question">
+                    <div class="question-number">1. Riscos naturais são sempre imprevisíveis.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">2. Desastre é quando um evento causa danos que podem ser superados facilmente.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">3. Catástrofe é um desastre de grande magnitude.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">4. Riscos antrópicos são aqueles causados exclusivamente pela natureza.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">5. A falta de infraestrutura aumenta a vulnerabilidade de uma população.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">6. A Defesa Civil é responsável por alertas e prevenção de desastres.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">7. Doenças como dengue e febre amarela são transmitidas por mosquitos.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">8. Água contaminada pode causar cólera e hepatite.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">9. Terremotos ocorrem apenas em limites de placas tectônicas.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">10. Monocultura é o cultivo de vários produtos em uma mesma área.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">11. Pecuária intensiva confina os animais e usa ração balanceada.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">12. Turismo rural não gera renda para as comunidades rurais.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">13. Espaços rurais são caracterizados apenas por atividades agrícolas.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">14. Tecnologia reduz a necessidade de mão de obra no campo.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">15. Incentivos fiscais podem atrair empresas para áreas rurais.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">16. Policultura é comum em pequenas propriedades familiares.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">17. Apicultura é a criação de abelhas.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">18. Urbanização não afeta as áreas rurais.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">19. Fazendas históricas não têm valor turístico.</div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">20. O setor primário inclui indústria de transformação.</div>
+                </div>
+
+                <h3>🔘 MÚLTIPLA ESCOLHA (20 questões)</h3>
+                
+                <div class="question">
+                    <div class="question-number">21. O que é um desastre?</div>
+                    <div class="answers">
+                        <div class="answer">a) Evento natural inevitável</div>
+                        <div class="answer">b) Situação que causa danos difíceis de superar</div>
+                        <div class="answer">c) Fenômeno que ocorre apenas em áreas urbanas</div>
+                        <div class="answer">d) Ação humana intencional</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">22. Qual NÃO é um tipo de risco natural?</div>
+                    <div class="answers">
+                        <div class="answer">a) Terremoto</div>
+                        <div class="answer">b) Enchente</div>
+                        <div class="answer">c) Poluição industrial</div>
+                        <div class="answer">d) Seca</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">23. Como se prevenir de inundações?</div>
+                    <div class="answers">
+                        <div class="answer">a) Construir em áreas de risco</div>
+                        <div class="answer">b) Ignorar alertas</div>
+                        <div class="answer">c) Ter plano de evacuação e proteger documentos</div>
+                        <div class="answer">d) Não fazer nada</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">24. Qual doença NÃO é transmitida por água contaminada?</div>
+                    <div class="answers">
+                        <div class="answer">a) Cólera</div>
+                        <div class="answer">b) Dengue</div>
+                        <div class="answer">c) Hepatite</div>
+                        <div class="answer">d) Febre tifoide</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">25. O que é monocultura?</div>
+                    <div class="answers">
+                        <div class="answer">a) Cultivo de vários produtos</div>
+                        <div class="answer">b) Cultivo de um único produto</div>
+                        <div class="answer">c) Criação de animais</div>
+                        <div class="answer">d) Sistema de rotação de culturas</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">26. O que é pecuária extensiva?</div>
+                    <div class="answers">
+                        <div class="answer">a) Animais criados soltos em pastagens</div>
+                        <div class="answer">b) Animais confinados</div>
+                        <div class="answer">c) Criação de peixes</div>
+                        <div class="answer">d) Cultivo de grãos</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">27. O que é turismo rural?</div>
+                    <div class="answers">
+                        <div class="answer">a) Só hospedagem</div>
+                        <div class="answer">b) Atividade que inclui vivência no campo e gastronomia</div>
+                        <div class="answer">c) Apenas visita a fábricas</div>
+                        <div class="answer">d) Turismo em grandes cidades</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">28. Qual fator NÃO influencia a localização de atividades econômicas?</div>
+                    <div class="answers">
+                        <div class="answer">a) Recursos naturais</div>
+                        <div class="answer">b) Cor do solo</div>
+                        <div class="answer">c) Mão de obra</div>
+                        <div class="answer">d) Tecnologia</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">29. O que é apicultura?</div>
+                    <div class="answers">
+                        <div class="answer">a) Criação de aves</div>
+                        <div class="answer">b) Criação de abelhas</div>
+                        <div class="answer">c) Criação de peixes</div>
+                        <div class="answer">d) Cultivo de flores</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">30. O que é um risco biológico?</div>
+                    <div class="answers">
+                        <div class="answer">a) Terremoto</div>
+                        <div class="answer">b) Doença transmitida por mosquito</div>
+                        <div class="answer">c) Enchente</div>
+                        <div class="answer">d) Acidente nuclear</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">31. Qual é um exemplo de risco tecnológico?</div>
+                    <div class="answers">
+                        <div class="answer">a) Seca</div>
+                        <div class="answer">b) Vazamento de produto químico</div>
+                        <div class="answer">c) Terremoto</div>
+                        <div class="answer">d) Epidemia</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">32. O que é Defesa Civil?</div>
+                    <div class="answers">
+                        <div class="answer">a) Órgão que só atua em guerra</div>
+                        <div class="answer">b) Órgão de prevenção e resposta a desastres</div>
+                        <div class="answer">c) Só emite alertas meteorológicos</div>
+                        <div class="answer">d) Não existe no Brasil</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">33. O que é policultura?</div>
+                    <div class="answers">
+                        <div class="answer">a) Cultivo de um produto</div>
+                        <div class="answer">b) Cultivo de vários produtos</div>
+                        <div class="answer">c) Criação de animais</div>
+                        <div class="answer">d) Sistema de irrigação</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">34. O que NÃO é uma atividade do setor primário?</div>
+                    <div class="answers">
+                        <div class="answer">a) Agricultura</div>
+                        <div class="answer">b) Pecuária</div>
+                        <div class="answer">c) Indústria</div>
+                        <div class="answer">d) Extrativismo</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">35. O que é um desastre antropogênico?</div>
+                    <div class="answers">
+                        <div class="answer">a) Causado pela natureza</div>
+                        <div class="answer">b) Causado pelo ser humano</div>
+                        <div class="answer">c) Imprevisível</div>
+                        <div class="answer">d) Sem consequências</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">36. Qual é um exemplo de conservação ambiental no rural?</div>
+                    <div class="answers">
+                        <div class="answer">a) Desmatamento</div>
+                        <div class="answer">b) Turismo sustentável</div>
+                        <div class="answer">c) Uso de agrotóxicos</div>
+                        <div class="answer">d) Monocultura intensiva</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">37. O que é uma catástrofe?</div>
+                    <div class="answers">
+                        <div class="answer">a) Pequeno acidente</div>
+                        <div class="answer">b) Desastre de grande impacto</div>
+                        <div class="answer">c) Evento controlável</div>
+                        <div class="answer">d) Fenômeno sem vítimas</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">38. Qual NÃO é um fator locacional?</div>
+                    <div class="answers">
+                        <div class="answer">a) Relevo</div>
+                        <div class="answer">b) Clima</div>
+                        <div class="answer">c) Cor dos olhos do produtor</div>
+                        <div class="answer">d) Mercado consumidor</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">39. O que é agricultura familiar?</div>
+                    <div class="answers">
+                        <div class="answer">a) Produção em grande escala</div>
+                        <div class="answer">b) Produção para exportação</div>
+                        <div class="answer">c) Produção para consumo próprio e venda local</div>
+                        <div class="answer">d) Uso exclusivo de máquinas</div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <div class="question-number">40. Qual é a principal característica do espaço rural?</div>
+                    <div class="answers">
+                        <div class="answer">a) Alta densidade populacional</div>
+                        <div class="answer">b) Predomínio de atividades primárias</div>
+                        <div class="answer">c) Presença de indústrias pesadas</div>
+                        <div class="answer">d) Ausência de natureza</div>
+                    </div>
+                </div>
+
+                <div class="btn-container">
+                    <button class="toggle-btn" onclick="toggleGabarito()">Mostrar/Esconder Gabarito</button>
+                </div>
+
+                <div id="gabarito" class="gabarito hidden">
+                    <h3>📎 GABARITO</h3>
+                    <h4>Verdadeiro ou Falso:</h4>
+                    <p>1. Falso<br>2. Falso<br>3. Verdadeiro<br>4. Falso<br>5. Verdadeiro<br>6. Verdadeiro<br>7. Verdadeiro<br>8. Verdadeiro<br>9. Verdadeiro<br>10. Falso<br>11. Verdadeiro<br>12. Falso<br>13. Falso<br>14. Verdadeiro<br>15. Verdadeiro<br>16. Verdadeiro<br>17. Verdadeiro<br>18. Falso<br>19. Falso<br>20. Falso</p>
+                    
+                    <h4>Múltipla Escolha:</h4>
+                    <p>21. b<br>22. c<br>23. c<br>24. b<br>25. b<br>26. a<br>27. b<br>28. b<br>29. b<br>30. b<br>31. b<br>32. b<br>33. b<br>34. c<br>35. b<br>36. b<br>37. b<br>38. c<br>39. c<br>40. b</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Geografia dos Riscos e Espaços Rurais - Conteúdo para ensino fundamental</p>
+            <p>🌍 Educação Geográfica para um futuro sustentável 🌱</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleGabarito() {
+            const gabarito = document.getElementById('gabarito');
+            gabarito.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
